@@ -1,0 +1,35 @@
+.itemCard {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: flex-start;
+
+  .title {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
+    }
+  }
+
+  .text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    color: #fff;
+
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
+    }
+  }
+}

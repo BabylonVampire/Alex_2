@@ -1,0 +1,143 @@
+.section {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  padding: 50px 70px;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-x: clip;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: left;
+  color: #fff;
+  width: 60%;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1600px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 1300px) {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+}
+
+.image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url(/src/assets/benefitsCamera.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  max-height: 1080px;
+  z-index: 1;
+
+  @media screen and (max-width: 1200px) {
+    max-height: none;
+    right: 50%;
+    bottom: auto;
+    top: -50px;
+    z-index: 3;
+    background-size: cover;
+  }
+}
+
+.paragraph {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  gap: 150px;
+
+  &Box {
+    width: 45%;
+    background-color: rgba(31, 31, 31, 0.6);
+    border: solid 5px rgba(89, 89, 89, 0.6);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 35px;
+    padding: 20px 30px;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      height: auto;
+      position: relative;
+      right: 100px;
+      padding-left: 300px;
+    }
+
+    @media screen and (max-width: 900px) {
+      width: calc(100% + 130px);
+      padding-left: 200px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 60px;
+  }
+}
+
+.contentGrid {
+  display: flex;
+  gap: 15px 50px;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  & > *:not(:last-child) {
+    height: 250px;
+
+    @media screen and (max-width: 1600px) {
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+.icon {
+  height: 100px !important;
+  width: 100px !important;
+
+  @media screen and (max-width: 1300px) {
+    height: 50px !important;
+    width: 50px !important;
+  }
+}
+
+.outPoint {
+  z-index: 2;
+  position: relative;
+}

@@ -1,0 +1,99 @@
+.section {
+  position: relative;
+  width: 100%;
+  max-width: 1662px;
+  margin: 150px auto;
+  padding: 60px 50px;
+
+  @media screen and (max-width: 900px) {
+    margin: 50px auto;
+  }
+}
+
+.mainBox {
+  padding: 60px 50px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  border: solid 5px rgba(89, 89, 89, 0.6);
+  border-radius: 35px;
+  background-image: url(../../assets/errorSectionBack.png);
+  background-position: center center;
+  background-size: cover;
+
+  @media screen and (max-width: 900px) {
+    padding: 40px 30px;
+  }
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: 1300px) {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+}
+
+.paragraph {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: left;
+  color: #fff;
+
+  @media screen and (max-width: 1300px) {
+    font-size: 24px;
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.callUsButton {
+  font-family: Montserrat;
+  background-color: #2969ff;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 57px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 370px;
+  height: 75px;
+  color: #fff;
+  font-size: 32px;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: #1e4ebe;
+  }
+}

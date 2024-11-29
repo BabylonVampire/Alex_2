@@ -1,0 +1,114 @@
+.itemCard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 600px;
+  height: 200px;
+  align-items: center;
+
+  @media screen and (max-width: 1600px) {
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+    width: 300px;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: auto;
+  }
+}
+
+.number {
+  font-family: Montserrat;
+  font-size: 200px;
+  font-weight: 300;
+  line-height: 150px;
+  width: 150px;
+  text-align: center;
+  color: #fff;
+
+  @media screen and (max-width: 1600px) {
+    font-size: 128px;
+    line-height: 100px;
+    width: auto;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 100px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 72px;
+    line-height: 64px;
+  }
+
+  &Side {
+    @media screen and (max-width: 1600px) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  }
+}
+
+.stageLabel {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
+}
+
+.verticalDivider {
+  background-color: #595959;
+  width: 2px;
+  height: 100%;
+
+  @media screen and (max-width: 1600px) {
+    height: 2px;
+    width: 348px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 200px;
+  }
+}
+
+.point {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+  color: #fff;
+  list-style-position: outside;
+  position: relative;
+  left: 20px;
+
+  &List {
+    list-style-position: inside;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

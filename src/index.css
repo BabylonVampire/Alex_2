@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* SCROLL */
+*::-webkit-scrollbar {
+  width: 6px; /* ширина scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background-color: #2e2e2e; /* цвет плашки */
+}
+*::-webkit-scrollbar-thumb {
+  background: #000; /* цвет дорожки */
+  border-radius: 8px; /* закругления плашки */
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2e2e2e #000;
+}
+/* SCROLL */
+
+/* COLOR OF SELECTION */
+/* ::selection {
+	background: #2e2e2e;
+	color: var(--color-font-contrast);
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #2e2e2e;
+	color: var(--color-font-contrast);
+	text-shadow: none;
+} */
+/* COLOR OF SELECTION */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#root {
+  background-color: #000;
+}
